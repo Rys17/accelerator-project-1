@@ -1,4 +1,7 @@
-// Vendor
-// ---------------------------------
 
 @import "vendor/normalize";
+@import "common/mixin.scss";
+@import "common/font.scss";
+@import "common/global.scss";
+@import "common/variables.scss";
+@import "common/visually-hidden.scss";
