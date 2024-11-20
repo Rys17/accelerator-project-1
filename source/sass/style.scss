@@ -2,6 +2,12 @@
 @import "vendor/normalize";
 @import "common/mixin.scss";
 @import "common/font.scss";
-@import "common/global.scss";
 @import "common/variables.scss";
+@import "common/global.scss";
 @import "common/visually-hidden.scss";
+@import "block/header.scss";
+@import "block/container.scss";
+@import "block/logo.scss";
+@import "block/button.scss";
+
+

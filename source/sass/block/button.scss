@@ -1,0 +1,13 @@
+.button {
+  padding: 22px 56px;
+  border: 2px solid $primary-white;
+  text-decoration: none;
+  color: $primary-white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 21px 0;
+  }
+}
