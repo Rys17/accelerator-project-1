@@ -2,6 +2,7 @@
   background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
   padding-top: 16px;
   padding-bottom: 32px;
+  color: $primary-white;
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;
@@ -24,7 +25,7 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,13 +58,17 @@
   column-gap: 21px;
   @media (min-width: $tablet-width) {
     grid-template-columns: 113px 185px 1fr;
+    grid-template-rows: 1fr 170px 1fr;
     column-gap: 26px;
+    row-gap: 10px;
+    height: 390px;
   }
   @media (min-width: $desktop-width) {
     grid-template-columns: 115px 270px 524fr;
+    grid-template-rows: 1fr 220px 1fr;
     column-gap: 0;
     row-gap: 40px;
-    padding: 0 72px 0 142px;
+    padding: 0 72px 0 147px;
   }
 }
 
@@ -105,14 +110,13 @@
   line-height: 32px;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   justify-self: end;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 10px;
-    margin-top: 23px;
+    margin-bottom: 0;
     align-self: end;
   }
 
@@ -133,12 +137,13 @@
   letter-spacing: 1px;
   margin: 0;
   text-align: right;
+  justify-self: self-start;
+
 
   @media (min-width: $tablet-width) {
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 2px;
-    align-self: end;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,8 +163,7 @@
   line-height: 12px;
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
-    margin: 50px 0 31px;
-    align-self: center;
+    margin: 40px 0 31px;
   }
   @media (min-width: $desktop-width) {
     margin: 0 0 52px;
