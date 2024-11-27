@@ -1,0 +1,147 @@
+.price {
+  background-color: $background-white-additionally;
+}
+
+.price__container {
+  display: flex;
+  flex-direction: column;
+  color: $text-primary;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.price__title {
+  font-family: $primary-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+.price__wrapper-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.price__button {
+  border: none;
+  padding: 0;
+  background-color: $background-white-additionally;
+  color: rgba(16, 38, 84, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.price__button--active {
+  color: $text-primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 2px;
+    bottom: -2px;
+    background-color: #d10a42;
+  }
+}
+
+.price__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+.price__item {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: $primary-white;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+.price__title-card {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.price__time-card {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0;
+}
+
+.price__price-card {
+  position: relative;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: $text-accent;
+  margin: 0;
+  padding-top: 48px;
+  z-index: 1;
+  left: -17px;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 33px;
+    background-image: url("/__spritemap#sprite-rub-view");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 56%;
+    right: 63px;
+  }
+
+  span {
+    color: $text-primary;
+  }
+}
+
+.price__button-card {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  color: $text-primary;
+  margin: 0;
+  padding: 25px 47.5px 25px;
+  border: 2px solid $text-primary;
+  background-color: $primary-white;
+  text-transform: uppercase;
+  align-self: center;
+  margin-bottom: 50px;
+}
