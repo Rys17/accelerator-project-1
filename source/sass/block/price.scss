@@ -1,5 +1,17 @@
 .price {
   background-color: $background-white-additionally;
+  @media (min-width: $tablet-width) {
+    background-image:
+      image-set(
+        url("../../img/price/disk-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/price/disk-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/price/disk-tablet@1x.png") 1x type("image/png"),
+        url("../../img/price/disk-tablet@2x.png") 2x type("image/png")
+      );
+    background-repeat: no-repeat;
+    background-position: right -79px bottom -36px;
+    background-size: 403px 422px;
+  }
 }
 
 .price__container {
@@ -14,6 +26,8 @@
   @media (min-width: $tablet-width) {
     padding-top: 60px;
     padding-bottom: 60px;
+    gap: 0;
+    position: relative;
   }
 }
 
@@ -27,6 +41,7 @@
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
+    padding-bottom: 35px;
   }
 }
 
@@ -38,6 +53,12 @@
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   position: relative;
   padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    width: 0;
+    min-width: 310px;
+  }
 }
 
 .price__button {
@@ -48,6 +69,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
@@ -64,6 +86,10 @@
     height: 2px;
     bottom: -2px;
     background-color: #d10a42;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+    }
   }
 }
 
@@ -73,6 +99,11 @@
   margin: 0;
   text-align: center;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 0;
+    min-width: 380px;
+  }
 }
 
 
@@ -83,8 +114,15 @@
   background-color: $primary-white;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    gap: 22px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 35px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -94,6 +132,12 @@
   line-height: 22px;
   margin: 0;
   padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 65px;
+  }
 }
 
 .price__time-card {
@@ -101,6 +145,11 @@
   font-weight: 300;
   line-height: 22px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .price__price-card {
@@ -114,6 +163,13 @@
   z-index: 1;
   left: -17px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 90px;
+    padding-top: 60px;
+    left: -18px;
+  }
+
   &::after {
     content: "";
     width: 24px;
@@ -125,10 +181,13 @@
     position: absolute;
     top: 56%;
     right: 63px;
-  }
 
-  span {
-    color: $text-primary;
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 42px;
+      right: 85px;
+      top: 55%;
+    }
   }
 }
 
@@ -144,4 +203,9 @@
   text-transform: uppercase;
   align-self: center;
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    width: 250px;
+  }
 }

@@ -13,13 +13,13 @@
     text-align: center;
     color: rgba(232, 232, 232, 0.5);
     z-index: -1;
-  }
 
-  @media (min-width: $tablet-width) {
-    &::before {
-      font-size: 40px;
+    @media (min-width: $tablet-width) {
+      font-size: 100px;
+      line-height: 150px;
     }
   }
+
 
   @media (min-width: $desktop-width) {
     &::before {
