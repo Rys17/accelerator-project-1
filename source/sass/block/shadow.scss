@@ -19,11 +19,4 @@
       line-height: 150px;
     }
   }
-
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      font-size: 55px;
-    }
-  }
 }
