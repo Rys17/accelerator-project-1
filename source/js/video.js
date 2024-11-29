@@ -21,4 +21,4 @@ function playVideo() {
 }
 
 
-playVideo();
+export {playVideo};

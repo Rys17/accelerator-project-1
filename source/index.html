@@ -115,12 +115,12 @@
       <div class="price__container container">
         <h3 class="price__title">Абонементы</h3>
         <div class="price__wrapper-button">
-          <button class="price__button price__button--active">1 месяц</button>
-          <button class="price__button">6 месяцев</button>
-          <button class="price__button">12 месяцев</button>
+          <button class="price__button price__button--active" type="button" data-tab="#tab-1">1 месяц</button>
+          <button class="price__button" type="button" data-tab="#tab-2">6 месяцев</button>
+          <button class="price__button" type="button" data-tab="#tab-3">12 месяцев</button>
         </div>
 
-        <ul class="price__list">
+        <ul class="price__list  price__list--active" id="tab-1">
           <li class="price__item">
             <h4 class="price__title-card">С тренером</h4>
             <p class="price__time-card">12 занятий</p>
@@ -145,9 +145,61 @@
           </li>
 
         </ul>
-      </div>
 
+        <ul class="price__list" id="tab-2">
+          <li class="price__item">
+            <h4 class="price__title-card">С тренером</h4>
+            <p class="price__time-card">12 занятий</p>
+            <p class="price__price-card shadow" data-name="5000">30 000
+            </p>
+
+            <button class="price__button-card">Купить абонемент</button>
+
+          </li>
+          <li class="price__item">
+            <h4 class="price__title-card">Дневной</h4>
+            <p class="price__time-card">с 8:00 до 17:00</p>
+            <p class="price__price-card shadow" data-name="1700">10 200</p>
+            <button class="price__button-card">Купить абонемент</button>
+
+          </li>
+          <li class="price__item">
+            <h4 class="price__title-card">Полный день</h4>
+            <p class="price__time-card">с 8:00 до 22:00</p>
+            <p class="price__price-card shadow" data-name="2700">16 200</p>
+            <button class="price__button-card">Купить абонемент</button>
+          </li>
+
+        </ul>
+        <ul class="price__list" id="tab-3">
+
+          <li class="price__item">
+            <h4 class="price__title-card">С тренером</h4>
+            <p class="price__time-card">12 занятий</p>
+            <p class="price__price-card shadow" data-name="5000">60 000
+            </p>
+
+            <button class="price__button-card">Купить абонемент</button>
+
+          </li>
+          <li class="price__item">
+            <h4 class="price__title-card">Дневной</h4>
+            <p class="price__time-card">с 8:00 до 17:00</p>
+            <p class="price__price-card shadow" data-name="1700">20 400</p>
+            <button class="price__button-card">Купить абонемент</button>
+
+          </li>
+          <li class="price__item">
+            <h4 class="price__title-card">Полный день</h4>
+            <p class="price__time-card">с 8:00 до 22:00</p>
+            <p class="price__price-card shadow" data-name="2700">32 400</p>
+            <button class="price__button-card">Купить абонемент</button>
+          </li>
+        </ul>
+      </div>
     </section>
+
+
 
 
 
@@ -169,7 +221,7 @@
   <div data-test="reviews">reviews</div>
   <div data-test="form">form</div>
   <div data-test="footer">footer</div> -->
-  <script type="module" src="js/video.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
