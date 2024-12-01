@@ -1,0 +1,22 @@
+.shadow {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: attr(data-name) / "";
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 120px;
+    text-align: center;
+    color: rgba(232, 232, 232, 0.5);
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      font-size: 100px;
+      line-height: 150px;
+    }
+  }
+}

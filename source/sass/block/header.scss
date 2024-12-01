@@ -161,12 +161,14 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
+  padding: 22px 0 22px;
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     margin: 40px 0 31px;
   }
   @media (min-width: $desktop-width) {
     margin: 0 0 52px;
+    padding: 27px 0 27px;
   }
 
 }
