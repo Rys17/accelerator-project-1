@@ -1,6 +1,6 @@
 // https://swiperjs.com/get-started#installation
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import 'swiper/css';
 
 const juriSwiper = new Swiper('.juri__swiper', {
@@ -28,8 +28,8 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
   slidesPerView: 'auto',
   spaceBetween: 200,
   navigation: {
-    nextEl: '.reviews__swiper-button-prev',
-    prevEl: '.reviews__swiper-button-next',
+    nextEl: '.reviews__swiper-button-next',
+    prevEl: '.reviews__swiper-button-prev',
   },
   modules: [Navigation],
 });
