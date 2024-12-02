@@ -24,4 +24,14 @@ const juriSwiper = new Swiper('.juri__swiper', {
   }
 });
 
-// export { juriSwiper };
+const reviewsSwiper = new Swiper('.reviews__swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 200,
+  navigation: {
+    nextEl: '.reviews__swiper-button-prev',
+    prevEl: '.reviews__swiper-button-next',
+  },
+  modules: [Navigation],
+});
+
+
