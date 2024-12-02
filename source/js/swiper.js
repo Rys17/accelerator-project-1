@@ -1,6 +1,6 @@
 // https://swiperjs.com/get-started#installation
-import Swiper from "swiper";
-import { Navigation } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 const juriSwiper = new Swiper('.juri__swiper', {
@@ -34,4 +34,6 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
   modules: [Navigation],
 });
 
+juriSwiper();
+reviewsSwiper();
 
