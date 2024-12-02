@@ -1,0 +1,331 @@
+.faq {
+  background-color: $background-white-additionally;
+}
+
+.faq__title {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  color: $text-primary;
+  font-family: $primary-font;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+    margin-bottom: 44px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.faq__tab {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.faq__tablist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+.faq__tab-button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: none;
+  background-color: inherit;
+  color: $text-primary;
+  min-width: 140px;
+  padding: 14px 10px;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  transition: all 300ms ease;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    min-width: 162px;
+    padding-block: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 260px;
+  }
+
+  &:hover {
+    border: 1px solid $text-primary;
+  }
+
+  &:disabled {
+    border-color: #e8e8e8;
+    color: #c8c9cc;
+    pointer-events: none;
+  }
+}
+
+.faq__tab-button--current {
+  background: linear-gradient(97.05deg, $button-gradient1 17.6%, $button-gradient2 95.31%);
+  color: $text-primary;
+  border-color: transparent;
+  border-inline: none;
+  pointer-events: none;
+}
+
+.faq__tabpanel-list {
+  @include list-none;
+}
+
+.faq__tabpanel-list li {
+  border-top: 1px solid #74819c;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__tabpanel-list li:first-child span {
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
+}
+
+.faq__tabpanel-list li:last-child {
+  border-bottom: 1px solid #74819c;
+}
+
+.faq__tabpanel-list span {
+  color: $text-primary;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 400;
+  display: block;
+  width: 74%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    width: 80%;
+    margin-bottom: 28px;
+  }
+}
+
+.faq__tabpanel-list p {
+  color: $text-primary;
+  font-size: 16px;
+  line-height: 20px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 300ms;
+  width: 238px;
+  margin: 0;
+  order: 2;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 660px;
+  }
+}
+
+.faq__tabpanel-list .faq__tab-text-open {
+  opacity: 1;
+  margin: 0;
+  max-height: 600px;
+  padding-bottom: 20px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 23px;
+  }
+}
+
+
+.faq__tabpanel-list button {
+  background-color: inherit;
+  text-align: left;
+  color: inherit;
+  padding: 0;
+  position: relative;
+  order: 1;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+
+  @media (min-width: $desktop-width) {
+    width: 860px;
+  }
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 8px;
+    top: calc(48% + 2px);
+    transform: translateY(-50%);
+    mask-image: url("../__spritemap#sprite-plus-view");
+    mask-repeat: no-repeat;
+    border-radius: 100%;
+    background-color: #1c3374;
+    transition: all 300ms ease-in;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 20px;
+      right: 10px;
+      top: 43px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid #1c3374;
+    border-radius: 100%;
+    right: 0;
+    top: calc(48% + 2px);
+    transform: translateY(-50%);
+    transition: all 300ms ease-in;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      right: 0;
+      top: 43px;
+    }
+  }
+
+  &:focus-visible::after {
+    background-color: #74819c;
+  }
+
+  &:focus-visible::before {
+    background-color: $primary-white;
+  }
+
+  &:hover::before {
+    background-color: $primary-white;
+  }
+
+  &:hover::after {
+    background-color: $text-primary;
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &:disabled::before {
+    opacity: 0.3;
+  }
+
+  &:disabled::after {
+    opacity: 0.3;
+  }
+}
+
+.faq__tab-text-open + button::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #1c3374;
+  position: absolute;
+  right: 0;
+  top: calc(48% + 2px);
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 43px;
+  }
+}
+
+.faq__tab-text-open + button::before {
+  content: "";
+  width: 14px;
+  height: 1px;
+  background-color: $primary-white;
+  mask-image: none;
+  position: absolute;
+  right: 8px;
+  top: calc(48% + 2px);
+  transform: translateY(-50%);
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    top: 43px;
+    right: 10px;
+  }
+}
+
+.faq__tab-text-open + button:focus-visible::after {
+  background-color: #74819c;
+}
+
+.faq__tab-text-open + button > span {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.faq__tabpanel-list li:last-child span {
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
+}

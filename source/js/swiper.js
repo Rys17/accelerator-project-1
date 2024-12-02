@@ -24,4 +24,4 @@ const juriSwiper = new Swiper('.juri__swiper', {
   }
 });
 
-export { juriSwiper };
+// export { juriSwiper };
