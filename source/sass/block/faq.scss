@@ -275,7 +275,7 @@
   }
 }
 
-.faq__tab-text-open+button::after {
+.faq__tab-text-open + button::after {
   content: "";
   width: 30px;
   height: 30px;
@@ -294,7 +294,7 @@
   }
 }
 
-.faq__tab-text-open+button::before {
+.faq__tab-text-open + button::before {
   content: "";
   width: 14px;
   height: 1px;
@@ -313,11 +313,11 @@
   }
 }
 
-.faq__tab-text-open+button:focus-visible::after {
+.faq__tab-text-open + button:focus-visible::after {
   background-color: #74819c;
 }
 
-.faq__tab-text-open+button>span {
+.faq__tab-text-open + button > span {
   @media (min-width: $tablet-width) {
     margin-bottom: 18px;
   }

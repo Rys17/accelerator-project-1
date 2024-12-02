@@ -26,10 +26,7 @@
   margin: 0;
 
 
-
   @media (min-width: $tablet-width) {
-    line-height: 1;
-    font-weight: 600;
     padding-bottom: 35px;
     font-size: 54px;
     font-weight: 600;
@@ -164,7 +161,6 @@
     border-radius: 50%;
 
     --swiper-navigation-size: 0;
-
   }
 
 
@@ -200,12 +196,10 @@
   }
 
   &:disabled {
-
     &::before {
       border-color: rgba(16, 38, 84, 0.3);
     }
   }
-
 }
 
 .reviews__swiper-button-next {
