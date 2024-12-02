@@ -3,7 +3,6 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 1px;
     padding-top: 30px;
     padding-bottom: 60px;
   }
@@ -82,10 +81,12 @@
 
 .juri__button-next {
   transform: rotate(180deg);
+
   @media (min-width: $tablet-width) {
     left: 685px;
     bottom: 134px;
   }
+
   @media (min-width: $desktop-width) {
     left: 1282px;
   }
@@ -96,6 +97,7 @@
     left: 34px;
     bottom: 134px;
   }
+
   @media (min-width: $desktop-width) {
     left: 33px;
   }
@@ -121,7 +123,6 @@
   width: 260px;
   position: relative;
 }
-
 
 
 .juri__swiper-wrapper {
@@ -164,7 +165,6 @@
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -187,19 +187,19 @@
   bottom: 231.63px;
 }
 
-.juri__swiper-wrapper  .juri__swiper-slide:nth-child(2) .juri__text-title {
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(2) .juri__text-title {
   width: 150px;
 }
 
-.juri__swiper-wrapper  .juri__swiper-slide:nth-child(3) .juri__text-title {
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(3) .juri__text-title {
   width: 177px;
 }
 
 
-.juri__swiper-wrapper  .juri__swiper-slide:nth-child(6) .juri__text-title {
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(6) .juri__text-title {
   width: 150px;
 }
 
-.juri__swiper-wrapper  .juri__swiper-slide:nth-child(7) .juri__text-title {
+.juri__swiper-wrapper .juri__swiper-slide:nth-child(7) .juri__text-title {
   width: 177px;
 }
